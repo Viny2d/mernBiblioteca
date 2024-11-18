@@ -6,7 +6,7 @@ import express from "express";
 import { connectToDatabase } from "./config/db.js";
 import bookRouter from "./routes/book.routes.js";
 
-const port = process.env.PORT || 3125;
+const port = process.env.PORT || 3985;
 const __dirname = path.resolve();
 
 const app = express();

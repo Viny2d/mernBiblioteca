@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Box, IconButton, Paper, Stack, Typography } from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2";
+import Grid from "@mui/material/Grid2";
 import EditTwoToneIcon from "@mui/icons-material/EditTwoTone";
 import DeleteTwoToneIcon from "@mui/icons-material/DeleteTwoTone";
 import PropTypes from "prop-types";

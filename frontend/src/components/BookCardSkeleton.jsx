@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Grid from "@mui/material/Unstable_Grid2";
+import Grid from "@mui/material/Grid2";
 import { Box, Paper, Skeleton } from "@mui/material";
 
 const BookCardSkeleton = ({ count = 3 }) => {
