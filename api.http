@@ -1,0 +1,37 @@
+@host = http://localhost:3000
+@baseUrl = {{host}}/api/v1
+@contentType = application/json
+
+POST {{baseUrl}}/books
+Content-Type: {{contentType}}
+
+{
+    "title": "O Senhor dos Anéis",
+    "subtitle": "A Sociedade do Anel",
+    "author": "J.R.R Tolkien",
+    "genre": "Fantasia",
+    "cover": "https://m.media-amazon.com/images/I/81SM0D5+DwL._SL1500_.jpg"
+}
+###
+GET {{baseUrl}}/books
+Content-Type: {{contentType}}
+
+###
+GET {{baseUrl}}/books/670546843438cc8d911a8248
+Content-Type: {{contentType}}
+
+###
+PUT {{baseUrl}}/books/670e759039e24c60e442462b
+Content-Type: {{contentType}}
+
+{
+  "title": "The Boys In The Tree (Os Garotos Nas Árvores)",
+    "subtitle": "",
+    "author": "Nicholas Verso",
+    "genre": "Fantasy Drama",
+    "cover": "https://www.adorocinema.com/filmes/filme-249241/fotos/detalhe/?cmediafile=21326028"
+}
+
+###
+DELETE {{baseUrl}}/books/670546843438cc8d911a8248
+Content-Type: {{contentType}}
